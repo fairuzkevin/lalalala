@@ -1,0 +1,57 @@
+Log Platform IoT
+=======================================================================
+
+coba pake:
+apache2 2.4.18
+mysql 5.7.23
+php 7.2.9
+phpmyadmin 4.8.2
+
+
+bikin platform monolitic single container
+
+- pake image ubuntu:bionic
+	$ docker run -dit --name ubuntu ubuntu:bionic
+
+- pindahin folder iot2, dump.sql, sama laravel.conf ke dalam docker
+	$ docker cp iot-platform ubuntu:/iot-platform
+
+- masuk ke docker
+	$ docker start ubuntu (kalo containernya mati)
+	$ docker attach --detach-keys="ctrl-a,x" ubuntu
+
+- install apache, php, mysql, driver php-mysql
+	$ apt update
+	$ apt install apache2 php mysql-server php-mysql libapache2-mod-php
+
+- jalankan service apache2 dan mysql
+	$ service mysql start
+
+- bikin user dan database baru di mysql
+	$ mysql -u root
+	mysql > CREATE DATABASE TA_server;
+	mysql > CREATE USER 'homestead'@'localhost' IDENTIFIED BY 'homestead';
+	mysql > GRANT ALL PRIVILEGES ON * . * TO 'homestead'@'localhost';
+	mysql > FLUSH PRIVILEGES;
+
+- masukin dump.sql ke dalam mysql
+	$ mysql -u homestead -p TA_server < platform-iot/dump.sql
+
+- pindahin folder iot2  ke var/www/html
+	$ mkdir /var/www/html
+	$ cp -r iot-platform/iot2 /var/www/html/iot2
+	$ chmod -R 777 /var/www/html/iot2
+
+- config apache2
+	$ cp platform-iot/laravel.conf /etc/apache2/sites-available/laravel.conf
+	$ a2ensite laravel.conf
+	$ a2enmod rewrite
+
+- update php artisan (kalo ganti sesuatu di platform)
+	$ php artisan cache:clear
+	$ service apache2 restart
+
+- jalanin platform, akses dari web browser localhost:80
+
+- akses platform pake IP container ubuntu di browser
+	IP ubuntu biasanya 172.17.0.2
