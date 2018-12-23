@@ -1,1 +1,0 @@
-docker run -it -p 80:80 -p 3306:3306 -v ${PWD}/app:/app -v ${PWD}/mysql:/var/lib/mysql --name platform-iot fairuzkevin/platform-test:2.0
