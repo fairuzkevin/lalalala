@@ -52,7 +52,7 @@ for i in range (count):
 		  print "test 2 selesai"
 		  pass
 
-    if i == 3:
+        if i == 3:
 		  j=0
 		  print "Testing 1500 user"
 		  fout = open("terserah4.txt","wb")
