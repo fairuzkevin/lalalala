@@ -32,9 +32,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
+                            print "resting for 10 seconds"
+                            time.sleep(10) #break for 5 minutes
 		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
 		  pass
 
 	if i == 2:
@@ -47,9 +47,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
-		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
+                            print "resting for 10 seconds"
+			    time.sleep(10) #break for 5 minutes
+		  print "test 2 selesai"
 		  pass
 
     if i == 3:
@@ -62,9 +62,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
-		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
+		            print "resting for 10 seconds"
+		            time.sleep(10) #break for 5 minutes
+		  print "test 3 selesai"
 		  pass
 
 	if i == 4:
@@ -77,9 +77,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
-		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
+	                    print "resting for 10 seconds"
+		            time.sleep(10) #break for 5 minutes
+		  print "test 4 selesai"
 		  pass
 
 	if i == 5:
@@ -92,9 +92,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
-		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
+		            print "resting for 10 seconds"
+		            time.sleep(10) #break for 5 minutes
+		  print "test 5 selesai"
 		  pass
 
 	if i == 6:
@@ -107,9 +107,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
-		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
+		            print "resting for 10 seconds"
+		            time.sleep(10) #break for 5 minutes
+		  print "test 6 selesai"
 		  pass
 
 
@@ -123,9 +123,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
-		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
+		            print "resting for 10 seconds"
+		            time.sleep(10) #break for 5 minutes
+		  print "test 7 selesai"
 		  pass
 
 	if i == 8:
@@ -138,9 +138,9 @@ for i in range (count):
 		  	    ex.logfile = fout
 		  	    ex.expect(pe.EOF, timeout=None)
 		  	    print "test = %d" %j
-		  print "test 1 selesai"
-		  print "resting for 10 seconds"
-		  time.sleep(10) #break for 5 minutes
+		            print "resting for 10 seconds"
+		            time.sleep(10) #break for 5 minutes
+		  print "test 8 selesai"
 		  pass
 
 	if i == 9:
