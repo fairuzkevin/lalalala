@@ -55,7 +55,7 @@ class Resources():
        }
         }
   """
-    return disks
+  return disks
 
  def get_disk(self):
   disks = {}
@@ -88,6 +88,9 @@ class Resources():
     'drop' : net.dropout
    }
   }
+ 
+ def _conn_per_kind(self, kind):
+  return len(ps.net_connections(kind=kind))
  
  def get_net_conn(self, ):
   tcp4 = self._conn_per_kind('tcp4')
@@ -152,7 +155,7 @@ class Resources():
   stats = dict(host.items() + resr.items())
   return json.dumps(stats)#, sort_keys=True, indent=4)  
 
- class SenderAgent():
+class SenderAgent():
  def send_stat(self):
   res = Resources()
   stats = res.get_stats()
