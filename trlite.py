@@ -6,7 +6,7 @@ i = 0
 count = 3
 
 #test_1   = "ab -n "
-test_10  = "ab -r -c 500 -t 20s -n 200000 -H 'Accept: application/json' -H 'X-Authorization: bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnQxQHRoaW5nc2JvYXJkLm9yZyIsInNjb3BlcyI6WyJURU5BTlRfQURNSU4iXSwidXNlcklkIjoiODcyNTVmZDAtMDhlNC0xMWU5LWE3MzktMzc1MjU3NTdkYWE2IiwiZW5hYmxlZCI6dHJ1ZSwiaXNQdWJsaWMiOmZhbHNlLCJ0ZW5hbnRJZCI6IjdjNTIxMmIwLTA4ZTQtMTFlOS1hNzM5LTM3NTI1NzU3ZGFhNiIsImN1c3RvbWVySWQiOiIxMzgxNDAwMC0xZGQyLTExYjItODA4MC04MDgwODA4MDgwODAiLCJpc3MiOiJ0aGluZ3Nib2FyZC5pbyIsImlhdCI6MTU0NTgxNzU4MSwiZXhwIjoxNTQ2MDc2NzgxfQ.3LcOQBgcy0xp65kz9d4KoznCeL7Zj2QlWtNx5cKY2wgkOg1OleOLYzmY2jBMWKzges98cpLP6rsmv5KatKDIVA' http://35.197.129.117/api/plugins/telemetry/DEVICE/cb3059a0-08e4-11e9-a739-37525757daa6/values/attributes?keys=temperature"
+test_10  = "ab -r -c 500 -t 20s -n 200000 -H 'Accept: application/json' -H 'X-Authorization: bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnQxQHRoaW5nc2JvYXJkLm9yZyIsInNjb3BlcyI6WyJURU5BTlRfQURNSU4iXSwidXNlcklkIjoiOTdlZDhlYzAtMDc3Zi0xMWU5LWI4NDgtMGY4NzU2NjM4ZWE1IiwiZW5hYmxlZCI6dHJ1ZSwiaXNQdWJsaWMiOmZhbHNlLCJ0ZW5hbnRJZCI6IjhkMTA3ZGEwLTA3N2YtMTFlOS1iODQ4LTBmODc1NjYzOGVhNSIsImN1c3RvbWVySWQiOiIxMzgxNDAwMC0xZGQyLTExYjItODA4MC04MDgwODA4MDgwODAiLCJpc3MiOiJ0aGluZ3Nib2FyZC5pbyIsImlhdCI6MTU0NTg3ODIzNiwiZXhwIjoxNTQ2MTM3NDM2fQ.1Fj4P0K62yg3T6UZDiVTqnx246zGo4cdyX96ZpeNFse7hIWg5bNsWTnWm4ZjRs1DI5XyxxJtE5MUyvmb3aW4wg' http://35.247.130.210:8080/api/plugins/telemetry/DEVICE/521e3f50-07e5-11e9-848f-ab4155fe34aa/values/timeseries?keys=temperature"
 for i in range (count):
 
 	if i == 0:
